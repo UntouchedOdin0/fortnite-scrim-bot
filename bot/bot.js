@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-client.login(""); // your bot token goes in bracke "<token>"
+client.login(""); // Your bot token goes in the brackets "<token>"
 
 const fs = require('fs');
 const commands_path = require("path").join(__dirname, "commands");
@@ -48,7 +48,7 @@ let hasAccess = function(access,member) {
 }
 
 client.on("ready", () => {
-	console.log(`connected as ${client.user.tag}`);
+	console.log(`Connected as ${client.user.tag}`);
 	client.user.setActivity("Scrim Games");
 	client.guilds.forEach(function(guild){
 		_exports.newGuild(guild);
